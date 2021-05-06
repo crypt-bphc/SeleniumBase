@@ -1,6 +1,10 @@
+import time
 from seleniumbase import BaseCase
 
 
-class DemoSiteTests(BaseCase):
-    def test_demo_site(self):
-        self.open("https://controlc.com/66eee4cd")
+class MyTestClass(BaseCase):
+    def test_basics(self):
+        self.open("https://test.muttil.workers.dev/0:/")
+        print("Sleeping for 100 secs")
+        time.sleep(100)
+        print("Done")
